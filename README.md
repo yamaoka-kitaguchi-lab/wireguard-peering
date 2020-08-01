@@ -1,0 +1,2 @@
+# wireguard-peering
+Wireguardピアリング使う公開鍵と拠点IPアドレス
