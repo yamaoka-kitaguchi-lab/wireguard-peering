@@ -3,8 +3,9 @@ all: install
 .PHONY: install
 install:
 	cp update-wireguard-peers.service /etc/systemd/system/update-wireguard-peers.service
-	cp update-wireguard-peers.timer   /etc/systemd/system/update-wireguard-peers.timer
-	cp update-wireguard-peers.sh      /etc/systemd/system/update-wireguard-peers.sh
+	cp update-wireguard-peers.timer /etc/systemd/system/update-wireguard-peers.timer
+	cp update-wireguard-peers.sh /etc/systemd/system/update-wireguard-peers.sh
+	chmod +x /etc/systemd/system/update-wireguard-peers.sh
 	systemctl daemon-reload
 	systemctl enable --now update-wireguard-peers.timer
 
