@@ -1,0 +1,9 @@
+[Unit]
+Description=Update /etc/wireguard/wg0.conf from https://github.comyamaoka-kitaguchi-lab/wireguard-peering
+
+[Service]
+Type=simple
+ExecStart=/bin/bash .config/systemd/user/update-wireguard-peers.sh
+
+[Install]
+WantedBy=default.target
