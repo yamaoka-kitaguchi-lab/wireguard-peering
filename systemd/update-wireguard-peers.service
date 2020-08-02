@@ -3,7 +3,7 @@ Description=Update /etc/wireguard/wg0.conf from https://github.comyamaoka-kitagu
 
 [Service]
 Type=simple
-ExecStart=/bin/bash .config/systemd/user/update-wireguard-peers.sh
+ExecStart=/bin/bash /etc/systemd/system/update-wireguard-peers.sh
 
 [Install]
 WantedBy=default.target
