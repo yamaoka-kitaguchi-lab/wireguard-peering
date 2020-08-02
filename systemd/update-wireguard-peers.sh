@@ -23,7 +23,7 @@ if (( $repository_is_updated == 0 )); then
     exit 0
 fi
 
-awk '/\[Interface\]/,/## Peering Settings' < $WG_CONFIG > $WG_CONFIG_DRAFT
+awk '/\[Interface\]/,/## Peering Settings/' < $WG_CONFIG > $WG_CONFIG_DRAFT
 echo >> $WG_CONFIG_DRAFT
 cat peers.conf >> $WG_CONFIG_DRAFT
 
