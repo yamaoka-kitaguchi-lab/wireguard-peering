@@ -1,0 +1,8 @@
+[Unit]
+Description=Update ~/.ssh/authorized_keys from https://github.comyamaoka-kitaguchi-lab/publickeys (every 1 min)
+
+[Timer]
+OnUnitActiveSec=1m
+
+[Install]
+WantedBy=timers.target

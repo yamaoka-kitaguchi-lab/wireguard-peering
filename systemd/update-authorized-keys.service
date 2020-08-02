@@ -1,0 +1,9 @@
+[Unit]
+Description=Update ~/.ssh/authorized_keys from https://github.comyamaoka-kitaguchi-lab/publickeys
+
+[Service]
+Type=simple
+ExecStart=/bin/bash .config/systemd/user/update-authorized-keys.sh
+
+[Install]
+WantedBy=default.target
